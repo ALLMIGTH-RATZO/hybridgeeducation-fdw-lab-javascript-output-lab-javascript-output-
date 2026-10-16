@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de Output en Javascript</title>
+</head>
+<body>
+
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button onclick="mostrarNombre()">Mostrar mi nombre</button>
+
+    <p id="miParrafo"></p>
+
+    <button onclick="actualizarTexto()">Actualizar texto</button>
+
+    <script>
+        function mostrarNombre() {
+            alert("Josue raziel Ramirez Patiño");
+        }
+
+        function actualizarTexto() {
+            document.getElementById("miParrafo").textContent =
+                "¡Texto actualizado con Javascript!";
+        }
+
+        console.log("La página se ha cargado correctamente.");
+    </script>
+
+</body>
+</html>
